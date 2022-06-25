@@ -570,8 +570,12 @@ video {
   position: absolute;
 }
 
-.relative{
-  position: relative;
+.top-\[50\%\]{
+  top: 50%;
+}
+
+.left-\[6\%\]{
+  left: 6%;
 }
 
 .z-10{
@@ -583,24 +587,16 @@ video {
   margin-right: auto;
 }
 
-.mt-6{
-  margin-top: 1.5rem;
-}
-
-.mt-7{
-  margin-top: 1.75rem;
-}
-
-.mt-12{
-  margin-top: 3rem;
-}
-
 .mt-20{
   margin-top: 5rem;
 }
 
-.block{
-  display: block;
+.mt-\[30\%\]{
+  margin-top: 30%;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
 }
 
 .flex{
@@ -611,56 +607,32 @@ video {
   display: none;
 }
 
-.h-\[20rem\]{
-  height: 20rem;
-}
-
-.h-44{
-  height: 11rem;
-}
-
-.h-\[50rem\]{
-  height: 50rem;
-}
-
-.h-\[70rem\]{
-  height: 70rem;
+.h-\[40rem\]{
+  height: 40rem;
 }
 
 .w-full{
   width: 100%;
 }
 
-.w-6{
-  width: 1.5rem;
+.w-\[80\%\]{
+  width: 80%;
 }
 
-.w-\[20rem\]{
-  width: 20rem;
+.w-\[100\%\]{
+  width: 100%;
 }
 
-.w-\[200\%\]{
-  width: 200%;
+.w-\[90\%\]{
+  width: 90%;
 }
 
-.w-\[400\%\]{
-  width: 400%;
+.min-w-\[88vw\]{
+  min-width: 88vw;
 }
 
-.w-\[500\%\]{
-  width: 500%;
-}
-
-.w-\[800\%\]{
-  width: 800%;
-}
-
-.max-w-0{
-  max-width: 0rem;
-}
-
-.max-w-none{
-  max-width: none;
+.flex-col{
+  flex-direction: column;
 }
 
 .items-center{
@@ -671,16 +643,17 @@ video {
   justify-content: space-between;
 }
 
+.gap-4{
+  gap: 1rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
 
-.overflow-x-hidden{
-  overflow-x: hidden;
-}
-
-.overflow-y-hidden{
-  overflow-y: hidden;
+.bg-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 106 255 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -688,33 +661,38 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-hero-img{
+  background-image: url('src/assets/images/HeroImg.png');
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
 .bg-center{
   background-position: center;
 }
 
-.object-contain{
-  -o-object-fit: contain;
-     object-fit: contain;
+.p-4{
+  padding: 1rem;
 }
 
-.object-fill{
-  -o-object-fit: fill;
-     object-fit: fill;
+.p-3{
+  padding: 0.75rem;
 }
 
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.p-2{
+  padding: 0.5rem;
 }
 
-.px-\[10\%\]{
-  padding-left: 10%;
-  padding-right: 10%;
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
-.px-\[8\%\]{
-  padding-left: 8%;
-  padding-right: 8%;
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .px-\[6\%\]{
@@ -722,65 +700,67 @@ video {
   padding-right: 6%;
 }
 
+.text-left{
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.font-serif{
+  font-family: DM Serif Display, serif;
+}
+
+.text-cx{
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold{
   font-weight: 700;
 }
 
-.container{
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px){
-  .container{
-    max-width: 640px;
-    padding-right: 2rem;
-    padding-left: 2rem;
-  }
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (min-width: 768px){
-  .container{
-    max-width: 768px;
-  }
+.shadow-md{
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (min-width: 1024px){
-  .container{
-    max-width: 1024px;
-    padding-right: 4rem;
-    padding-left: 4rem;
-  }
-}
-
-@media (min-width: 1280px){
-  .container{
-    max-width: 1280px;
-    padding-right: 5rem;
-    padding-left: 5rem;
-  }
-}
-
-@media (min-width: 1536px){
-  .container{
-    max-width: 1536px;
-    padding-right: 10rem;
-    padding-left: 10rem;
-  }
-}
-
-@media (min-width: 768px){
-  .md\:hidden{
-    display: none;
-  }
+.hover\:bg-bggrey:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 1024px){

@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{jsx,js}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{jsx,js}",
+    "./src/components/**/*.{jsx,js}",
+    "./src/components/estate/forms**/*.{jsx,js}",
+    "./src/components/UI**/*.{jsx,js}",
+  ],
   theme: {
     container: {
       center: true,
@@ -26,7 +32,19 @@ module.exports = {
       sans: ["DM Sans", "sans-serif"],
       serif: ["DM Serif Display", "serif"],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-img": "url('src/assets/images/HeroImg.png')",
+      },
+      fontSize: {
+        cx: [
+          "1rem",
+          {
+            letterSpacing: "0.3em",
+          },
+        ],
+      },
+    },
   },
   plugins: [],
 };
