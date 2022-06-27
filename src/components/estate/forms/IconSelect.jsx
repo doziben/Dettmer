@@ -32,7 +32,7 @@ export default function IconSelect(props) {
   return (
     <div className="">
       <button
-        className="flex justify-between w-full font-bold text-base"
+        className="flex gap-2 justify-between font-bold text-base items-center border border-b100 p-3"
         onClick={() => {
           setOpen((prev) => {
             return !prev;
