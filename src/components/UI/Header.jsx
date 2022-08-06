@@ -36,8 +36,8 @@ export default function Header(props) {
 
   return (
     <>
-      <header className="bg-white fixed z-10 mx-auto w-full">
-        <div className=" px-[6%] py-4 flex justify-between items-center">
+      <header className="bg-white fixed z-10  w-full  mx-auto lg:py-5">
+        <div className=" px-[6%] lg:px-[6%] py-4 flex justify-between items-center max-w-7xl mx-auto">
           <div>
             <NavLink to={routes.main}>
               <Logo />
@@ -46,9 +46,9 @@ export default function Header(props) {
           {headerState && (
             <nav className="">
               <HamburgerIcon onClick={navHandler} />
-              <div className="hidden lg:flex  justify-between ">
-                <ul className="flex justify-between">{navItems}</ul>
-                <ul className="flex justify-between">{ctaItems}</ul>
+              <div className="hidden lg:flex  justify-between">
+                <ul className="flex  gap-5 mx-48">{navItems}</ul>
+                <ul className="flex gap-5">{ctaItems}</ul>
               </div>
             </nav>
           )}

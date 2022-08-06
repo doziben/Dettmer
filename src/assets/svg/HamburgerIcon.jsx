@@ -1,6 +1,6 @@
 export default function HamburgerIcon(props) {
   return (
-    <button onClick={props.onClick}>
+    <button onClick={props.onClick} className=" lg:hidden">
       <svg
         width="40"
         height="40"
