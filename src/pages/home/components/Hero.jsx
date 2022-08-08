@@ -2,7 +2,7 @@ import HeroForm from "../../../components/estate/forms/HeroForm";
 
 export default function Hero() {
   return (
-    <section className="w-full">
+    <section className="w-full relative">
       <div className="mt-auto text-center h-[40rem] bg-cover w-full overflow-hidden bg-center bg-hero-img">
         <div className="mt-[50%] md:mt-[20%]">
           <p className="text-cx text-white">TAILORED TO YOUR NEEDS</p>
