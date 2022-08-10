@@ -6,7 +6,7 @@ import SectionFour from "./components/SectionFour";
 
 export default function Home() {
   return (
-    <main>
+    <main >
       <Hero />
       <CtaSection />
       <SectionTwo />

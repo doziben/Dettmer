@@ -72,28 +72,31 @@ let oddData = odd.map((e) => (
 ));
 
 const sponsors = images.map((e, index) => (
-  <img key={index} className="w-[20%]" src={e} />
+  <img key={index} className="w-[20%] lg:w-[8%]" alt="Sponsors" src={e} />
 ));
 export default function SectionFour() {
   return (
-    <section className="mx-[6%] w-full flex flex-col gap-4 mb-6">
+    <section className="px-[6%] mx-auto flex flex-col gap-4 mb-6 max-w-7xl ">
       <HeadingText>
         Explore <br /> neighborhoods
       </HeadingText>
       <IconSelect placeHolder="USA" icon={<LocationIcon />} />
-      <div>
-        <div className="flex gap-2 w-[88%] mb-2">
+
+      <article className="lg:flex lg:flex-row  ">
+        <div className="flex gap-2 mb-2 lg:mb-0 ">
           <div className="flex flex-col gap-2">{neighbordata_1}</div>
-          <div className="">{oddData}</div>
+          <div className="mb-1 lg:mr-2">{oddData}</div>
         </div>
-        <div className="w-[88%]">
+
+        <div className="">
           <div className="flex gap-2 justify-between">{neighbordata_2}</div>
           <div className="flex mt-2 gap-2 justify-between">
             {neighbordata_3}
           </div>
         </div>
-      </div>
-      <div className="overflow-scroll flex gap-2 w-[88%] mt-10">{sponsors}</div>
+      </article>
+
+      <article className="overflow-x-scroll flex gap-2 mx-auto md:overflow-hidden md:justify-between  mt-10 md:gap-7">{sponsors}</article>
     </section>
   );
 }

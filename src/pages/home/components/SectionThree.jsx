@@ -64,7 +64,7 @@ let estateList = estates.map((e) => (
 export default function SectionThree() {
   return (
     <section className="my-12 w-full bg-bggrey">
-      <div className="py-8 mx-[6%]">
+      <div className="py-8 px-[6%] max-w-7xl mx-auto">
         <HeadingText center={true}>Explore homes</HeadingText>
         <div className="flex flex-col gap-6 w-full">
           <div className="flex w-full p-3 justify-center">
@@ -81,7 +81,7 @@ export default function SectionThree() {
             />
           </div>
           <div className="overflow-x-scroll flex">{estateList}</div>
-          <Button>View All</Button>
+          <Button extraStyling="mx-auto">View All</Button>
         </div>
       </div>
     </section>

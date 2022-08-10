@@ -14,7 +14,7 @@ const ctaItems = navCta.map((link) => (
 ));
 const navItems = navlinks.map((link) => (
   <li>
-    <NavLink to={link.to}>{link.title}</NavLink>
+    <NavLink activeStyle={{ color: "blue" }} to={link.to}>{link.title}</NavLink>
   </li>
 ));
 
@@ -36,21 +36,20 @@ export default function Header(props) {
 
   return (
     <>
-      <header className="bg-white fixed z-10  w-full  mx-auto lg:py-5">
+      <header className="bg-white fixed z-50  w-full  mx-auto lg:py-5">
         <div className=" px-[6%] lg:px-[6%] py-4 flex justify-between items-center max-w-7xl mx-auto">
-          <div>
-            <NavLink to={routes.main}>
-              <Logo />
-            </NavLink>
-          </div>
+          <NavLink to={routes.main}>
+            <Logo />
+          </NavLink>
+
           {headerState && (
-            <nav className="">
+            <>
               <HamburgerIcon onClick={navHandler} />
-              <div className="hidden lg:flex  justify-between">
+              <nav className="hidden lg:flex  justify-between">
                 <ul className="flex  gap-5 mx-48">{navItems}</ul>
-                <ul className="flex gap-5">{ctaItems}</ul>
-              </div>
-            </nav>
+              </nav>
+              <ul className="hidden lg:flex gap-5">{ctaItems}</ul>
+            </>
           )}
         </div>
       </header>

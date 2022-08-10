@@ -1,9 +1,8 @@
 export default function HeadingText(props) {
   const styles = {
     container: `${props.center === true && "flex flex-col items-center"}`,
-    heading: `text-b300 font-serif text-4xl ${
-      props.center === true && "text-center"
-    }`,
+    heading: `text-b300 font-serif text-4xl lg:text-5xl ${props.center === true && "text-center"
+      }`,
     line: `-mt-4`,
   };
 

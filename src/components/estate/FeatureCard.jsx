@@ -6,7 +6,7 @@ export default function FeatureCard(props) {
       {props.icon}
       <div>
         <h1 className="text-2xl text-primary font-bold">{props.title}</h1>
-        <p className="text-xs w-10/12">{props.content}</p>
+        <p className="text-xs w-10/12 md:text-base ">{props.content}</p>
       </div>
     </div>
   );

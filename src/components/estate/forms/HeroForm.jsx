@@ -10,7 +10,7 @@ export default function HeroForm() {
     { id: "Hello", value: "Hello" },
   ];
   return (
-    <Card className="text-left absolute bottom-[-20%] min-w-[88vw] left-[6%] mb-8 z-10 md:top-[50% lg:p-6 ">
+    <Card className="text-left absolute bottom-[-20%] min-w-[88vw] left-[6%] mb-8 z-10 md:top-[50% lg:p-6 max-w-7xl mx-auto">
       <div className="flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center">
         <SelectInput
           placeHolder="Residential"
@@ -32,7 +32,7 @@ export default function HeroForm() {
           label="Price"
           values={selectItems}
         />
-        <Button>Search</Button>
+        <Button extraStyling="min-w-full  lg:w-min lg:min-w-0">Search</Button>
       </div>
     </Card>
   );

@@ -27,11 +27,11 @@ const features = [
 
 export default function SectionTwo() {
   return (
-    <section className="my-16 mx-[6%]">
+    <section className="my-16 px-[6%] max-w-7xl mx-auto ">
       <HeadingText>
         Built for your <br /> needs
       </HeadingText>
-      <div className="flex flex-col">
+      <div className="flex flex-col lg:flex-row-reverse lg:justify-between items-center">
         <div className="relative">
           <img className="relative" src={s1} alt="" />
           <img className="absolute top-0 left-20 w-[70%]" src={s2} alt="" />

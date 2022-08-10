@@ -30,7 +30,7 @@ export default function IconSelect(props) {
   }
 
   return (
-    <div className="">
+    <div className="relative">
       <button
         className="flex gap-2 justify-between font-bold text-base items-center border border-b100 p-3"
         onClick={() => {
@@ -38,12 +38,18 @@ export default function IconSelect(props) {
             return !prev;
           });
         }}
+        onBlur={() => {
+          setOpen((prev) => {
+            let status = prev ? false : prev
+            return status
+          });
+        }}
       >
         <span>{props.icon}</span>
         {selected !== "" ? selected : props.placeHolder} <Caret />{" "}
       </button>
       {open && (
-        <ul className="p-3 absolute shadow-xl bg-white w-[90%]">
+        <ul className="p-3 absolute shadow-xl bg-white min-w-[18rem]">
           {values && values.map((e) => <Option id={e.id}>{e.value}</Option>)}
         </ul>
       )}

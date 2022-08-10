@@ -20,10 +20,10 @@ const CtaItems = [
 
 export default function CtaSection() {
   return (
-    <div className="flex flex-col gap-4 relative mb-10 mt-36 md:flex-row md:w-full">
+    <section className="flex flex-col gap-4 px-[6%] relative max-w-7xl mx-auto mb-10 mt-36 md:flex-row md:w-full">
       {CtaItems.map((e) => (
         <CtaCard title={e.title} label={e.label} imgSrc={e.imgSrc} />
       ))}
-    </div>
+    </section>
   );
 }
