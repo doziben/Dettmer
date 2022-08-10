@@ -6,17 +6,33 @@ import navlinks from "./navlinks";
 import HamburgerIcon from "../../assets/svg/HamburgerIcon";
 import navCta from "./navCta";
 import routes from "../../pages/routes";
+import Footer from "../Footer";
 
 const ctaItems = navCta.map((link) => (
-  <li>
+  <li key={link.title} className="font-bold py-1 text-lg lg:text-base lg:py-0 lg:font-normal hover:text-primary">
     <NavLink to={link.to}>{link.title}</NavLink>
   </li>
 ));
 const navItems = navlinks.map((link) => (
-  <li>
+  <li key={link.title} className="font-bold py-1 text-lg lg:text-base lg:py-0 lg:font-normal hover:text-primary">
     <NavLink activeStyle={{ color: "blue" }} to={link.to}>{link.title}</NavLink>
   </li>
 ));
+
+
+const mobileNav = (
+  <nav className="bg-white">
+    <nav className="flex flex-col gap-6  px-[6%] mx-auto py-8 dropdown shadow-2xl">
+      <ul className="">
+        {navItems}
+      </ul>
+
+      <ul className="">
+        {ctaItems}
+      </ul>
+    </nav>
+  </nav>
+)
 
 export default function Header(props) {
   const ctx = useContext(AppContext);
@@ -44,7 +60,7 @@ export default function Header(props) {
 
           {headerState && (
             <>
-              <HamburgerIcon onClick={navHandler} />
+              <HamburgerIcon onClick={navHandler} active={navState} />
               <nav className="hidden lg:flex  justify-between">
                 <ul className="flex  gap-5 mx-48">{navItems}</ul>
               </nav>
@@ -52,8 +68,12 @@ export default function Header(props) {
             </>
           )}
         </div>
+
+        {/* Mobile Nav */}
+        {navState && mobileNav}
       </header>
       {props.children}
+      <Footer />
     </>
   );
 }

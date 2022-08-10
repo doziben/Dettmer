@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import Header from "./components/UI/Header";
-import Test from "./components/estate/test";
+import "./styles/index.css"
 
 import routes from "./pages/routes";
 import AppProvider from "./helpers/AppProvider";

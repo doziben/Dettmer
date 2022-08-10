@@ -8,7 +8,7 @@ export default function HeadingText(props) {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>{props.children}</h1>;
+      <h1 className={styles.heading}>{props.children}</h1><br />
       <svg
         className={styles.line}
         width="106"

@@ -30,10 +30,10 @@ export default function SelectInput(props) {
   }
 
   return (
-    <div className="relative">
-      <p className="text-xs">{props.label}</p>
+    <div className="relative group">
+      <p className="text-xs group-hover:text-primary">{props.label}</p>
       <button
-        className="flex justify-between gap-3 w-full items-center font-bold text-base"
+        className="flex justify-between gap-3 w-full items-center font-bold text-base group-hover:text-primary"
         onClick={() => {
           setOpen((prev) => {
             return !prev;
@@ -43,7 +43,7 @@ export default function SelectInput(props) {
         {selected !== "" ? selected : props.placeHolder} <Caret />{" "}
       </button>
       {open && (
-        <ul className="p-3 absolute shadow-xl bg-white min-w-[18rem] z-30">
+        <ul className="p-3 absolute shadow-xl bg-white min-w-[18rem] z-30 dropdown">
           {values && values.map((e) => <Option id={e.id}>{e.value}</Option>)}
         </ul>
       )}

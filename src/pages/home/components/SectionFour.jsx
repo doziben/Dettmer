@@ -96,7 +96,7 @@ export default function SectionFour() {
         </div>
       </article>
 
-      <article className="overflow-x-scroll flex gap-2 mx-auto md:overflow-hidden md:justify-between  mt-10 md:gap-7">{sponsors}</article>
+      <article className="overflow-x-scroll py-12 flex gap-2 mx-auto md:overflow-hidden md:justify-between  mt-10 md:gap-7">{sponsors}</article>
     </section>
   );
 }

@@ -33,9 +33,9 @@ export default function SectionTwo() {
       </HeadingText>
       <div className="flex flex-col lg:flex-row-reverse lg:justify-between items-center">
         <div className="relative">
-          <img className="relative" src={s1} alt="" />
-          <img className="absolute top-0 left-20 w-[70%]" src={s2} alt="" />
-          <img className="absolute top-[50%] w-1/2" src={s3} alt="" />
+          <img className="relative" src={s1} alt="Dettmer Real estate" />
+          <img className="absolute top-0 left-20 w-[70%]" src={s2} alt="Dettmer Real estate" />
+          <img className="absolute top-[50%] w-1/2" src={s3} alt="Dettmer Real estate" />
         </div>
         <div className="flex flex-col gap-4">
           {features.map((e) => (

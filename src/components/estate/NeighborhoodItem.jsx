@@ -1,19 +1,19 @@
 export default function NeighborhoodItem(props) {
   return (
-    <div className="text-center relative">
+    <section className="text-center relative group cursor-pointer">
 
-      <div className="absolute top-[25%] left-[18%] md:top-[40%] md:left-[35%]">
+      <dl className="absolute top-[25%] left-[18%] md:top-[40%] md:left-[35%] z-10">
         <h1 className="text-white font-bold">{props.title}</h1>
-        <p className="text-white text-xs rounded-xl p-2 backdrop-blur-md">
+        <dd className="text-white text-xs rounded-xl p-2 backdrop-blur-md">
           {props.listings} Listings
-        </p>
-      </div>
+        </dd>
+      </dl>
 
       <img
-        className="w-[100%]"
+        className="w-[100%] group-hover:scale-[1.1] trans"
         src={props.imgSrc}
         alt="Dettmer Neighborhoods"
       />
-    </div>
+    </section>
   );
 }
