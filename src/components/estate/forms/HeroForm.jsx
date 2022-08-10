@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import Card from "../../UI/Card";
-import SelectInput from "./selectInput";
+import SelectInput from "./SelectInput";
 import Button from "../../UI/Button";
 
 export default function HeroForm() {
