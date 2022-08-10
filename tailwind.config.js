@@ -34,7 +34,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "hero-img": "url('src/assets/images/HeroImg.png')",
+        "hero-img": "url('./src/assets/images/HeroImg.png')",
       },
       fontSize: {
         cx: [
