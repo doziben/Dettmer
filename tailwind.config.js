@@ -1,5 +1,3 @@
-// const bgImg = require("./src/assets/images/HeroImg.png");
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -36,7 +34,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        // "hero-img": `url('${bgImg}')`,
+        "hero-img": "url('./src/assets/images/HeroImg.png')",
       },
       fontSize: {
         cx: [
