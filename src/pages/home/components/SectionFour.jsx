@@ -76,7 +76,12 @@ const sponsors = images.map((e, index) => (
 ));
 export default function SectionFour() {
   return (
-    <section className="px-[6%] mx-auto flex flex-col gap-4 mb-6 max-w-7xl ">
+    <section
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-duration="900"
+      className="px-[6%] mx-auto flex flex-col gap-4 mb-6 max-w-7xl "
+    >
       <HeadingText>
         Explore <br /> neighborhoods
       </HeadingText>
@@ -96,7 +101,14 @@ export default function SectionFour() {
         </div>
       </article>
 
-      <article className="overflow-x-scroll py-12 flex gap-2 mx-auto md:overflow-hidden md:justify-between  mt-10 md:gap-7">{sponsors}</article>
+      <article
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-duration="900"
+        className="overflow-x-scroll py-12 flex gap-2 mx-auto md:overflow-hidden md:justify-between  mt-10 md:gap-7"
+      >
+        {sponsors}
+      </article>
     </section>
   );
 }

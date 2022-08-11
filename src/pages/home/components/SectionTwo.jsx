@@ -27,15 +27,28 @@ const features = [
 
 export default function SectionTwo() {
   return (
-    <section className="my-16 px-[6%] max-w-7xl mx-auto ">
+    <section
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-duration="900"
+      className="my-16 px-[6%] max-w-7xl mx-auto "
+    >
       <HeadingText>
         Built for your <br /> needs
       </HeadingText>
       <div className="flex flex-col lg:flex-row-reverse lg:justify-between items-center">
         <div className="relative">
           <img className="relative" src={s1} alt="Dettmer Real estate" />
-          <img className="absolute top-0 left-20 w-[70%]" src={s2} alt="Dettmer Real estate" />
-          <img className="absolute top-[50%] w-1/2" src={s3} alt="Dettmer Real estate" />
+          <img
+            className="absolute top-0 left-20 w-[70%]"
+            src={s2}
+            alt="Dettmer Real estate"
+          />
+          <img
+            className="absolute top-[50%] w-1/2"
+            src={s3}
+            alt="Dettmer Real estate"
+          />
         </div>
         <div className="flex flex-col gap-4">
           {features.map((e) => (

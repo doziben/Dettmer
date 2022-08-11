@@ -9,10 +9,13 @@
     "tw": "npx tailwindcss -i ./src/styles/index.css -o ./src/styles/output.css --watch"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "framer-motion": "^6.3.11",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "^5.3.3"
+    "react-router-dom": "^5.3.3",
+    "react-scroll-parallax": "^3.3.1",
+    "swiper": "^8.3.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

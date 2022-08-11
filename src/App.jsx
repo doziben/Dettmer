@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import Header from "./components/UI/Header";
-import "./styles/index.css"
+import "./styles/index.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import routes from "./pages/routes";
 import AppProvider from "./helpers/AppProvider";
@@ -12,6 +14,11 @@ import Register from "./pages/validation/Register";
 import Contact from "./pages/home/Contact";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <Header>
       <AppProvider>
