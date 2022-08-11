@@ -1,20 +1,23 @@
 import CtaCard from "../../../components/estate/CtaCard";
+import CTA1 from "../../../../src/assets/images/CTA-Card-1.png"
+import CTA2 from "../../../../src/assets/images/CTA-Card-2.png"
+import CTA3 from "../../../../src/assets/images/CTA-Card-3.png"
 
 const CtaItems = [
   {
     label: "Search Homes",
     title: "Buy a home",
-    imgSrc: "/src/assets/images/CTA-Card-1.png",
+    imgSrc: CTA1,
   },
   {
     label: "We have made it easy",
     title: "Rent a home",
-    imgSrc: "/src/assets/images/CTA-Card-2.png",
+    imgSrc: CTA2,
   },
   {
     label: "Over 1M successful sales",
     title: "Sell a home",
-    imgSrc: "/src/assets/images/CTA-Card-3.png",
+    imgSrc: CTA3,
   },
 ];
 
