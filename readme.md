@@ -8,6 +8,7 @@ Real estate website designed for a client using figma, after which i implemented
 - React.js
 - Vite
 - React Router v5
+- Tailwind CSS
 
 ## Live Site
 [DETTMER](https://dettmer.netlify.app)
